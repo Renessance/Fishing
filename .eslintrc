@@ -1,0 +1,44 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "react-app",
+    "airbnb-typescript",
+    "airbnb/hooks"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": [
+          "src",
+          "node_modules"
+        ]
+      }
+    }
+  },
+  "rules": {
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "react/prop-types": "off",
+    "react/require-default-props": "off",
+    "no-empty-pattern": "off",
+    "no-param-reassign": "off",
+    "no-continue": "off",
+    "no-underscore-dangle": "off",
+    "arrow-body-style": "off",
+    "no-shadow": "off",
+    "import/no-cycle": "off",
+    "max-len": ["error", {
+      "code": 150,
+      "ignoreUrls": true,
+      "ignoreStrings": true,
+      "ignoreRegExpLiterals": true
+    }]
+  }
+}
